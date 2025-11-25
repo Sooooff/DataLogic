@@ -36,7 +36,7 @@
 	<!-- PostgreSQL-->
 	<Resource name="jdbc/DataLogicDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
-	      username="postgres" password="85182096ana"
+	      username="postgres" password="NVero200773$"
 	      driverClassName="org.postgresql.Driver"
 	      url="jdbc:postgresql://localhost/DataLogicdb"/>
 

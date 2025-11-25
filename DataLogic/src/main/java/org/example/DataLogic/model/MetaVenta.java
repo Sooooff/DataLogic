@@ -1,7 +1,14 @@
 package org.example.DataLogic.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Entity;
 import java.time.LocalDate;
 
+@Entity
+@Getter
+@Setter
 public class MetaVenta extends BaseEntity {
     private Long empleadoId;
     private double montoMeta;
@@ -14,6 +21,10 @@ public class MetaVenta extends BaseEntity {
         this.montoMeta = montoMeta;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
+    }
+
+    public MetaVenta() {
+
     }
 
     public Long getEmpleadoId() { return empleadoId; }

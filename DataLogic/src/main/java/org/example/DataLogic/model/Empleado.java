@@ -1,16 +1,30 @@
 package org.example.DataLogic.model;
 
+
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Entity;
+
+@Entity
+@Getter
+@Setter
 public class Empleado extends BaseEntity {
     private String cif; // CI o código (ej. 23020138)
     private String nombre;
     private String rol; // texto simple (ej. "Vendedor", "Gerente")
     private Double metaVenta; // meta en monto monetario (puede ser null si no tiene meta)
 
+
     public Empleado(String cif, String nombre, String rol) {
         super();
         this.cif = cif;
         this.nombre = nombre;
         this.rol = rol;
+    }
+
+    public Empleado() {
+
     }
 
     public String getCif() { return cif; }

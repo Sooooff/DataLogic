@@ -1,5 +1,13 @@
 package org.example.DataLogic.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Entity;
+
+@Entity
+@Getter
+@Setter
 public class Producto extends BaseEntity {
     private String codigo;
     private String nombre;
@@ -10,6 +18,10 @@ public class Producto extends BaseEntity {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precioUnitario = precioUnitario;
+    }
+
+    public Producto() {
+
     }
 
     public String getCodigo() { return codigo; }

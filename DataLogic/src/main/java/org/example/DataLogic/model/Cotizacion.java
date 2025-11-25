@@ -1,8 +1,15 @@
 package org.example.DataLogic.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Entity;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Getter
+@Setter
 public class Cotizacion extends BaseEntity {
     private String numeroCotizacion;
     private List<LineItem> items = new ArrayList<>();
@@ -10,6 +17,10 @@ public class Cotizacion extends BaseEntity {
     public Cotizacion(String numeroCotizacion) {
         super();
         this.numeroCotizacion = numeroCotizacion;
+    }
+
+    public Cotizacion() {
+
     }
 
     public String getNumeroCotizacion() { return numeroCotizacion; }
