@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+
+<module name="Cotizacion">
+    <model name="Cotizacion"/>
+    <controller name="Typical"/>
+
+    <action name="ConvertirAFactura"
+            class="org.example.DataLogic.actions.ConvertirCotizacionAFacturaAction"
+            image="invoice"
+            mode="detail"/>
+
+    <controller name="Typical">
+        <extends controllers="Default"/>
+        <actions>
+            <action action="ConvertirCotizacionAFacturaAction"
+                    visible="true"
+                    in-toolbar="true"/>
+        </actions>
+    </controller>
+</module>
