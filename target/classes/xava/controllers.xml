@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE controllers SYSTEM "dtds/controllers.dtd">
+
+<controllers>
+
+    <!-- ========== CONTROLADOR PARA FILTRAR FACTURAS POR VENDEDOR ========== -->
+    <controller name="FiltrarFacturasPorVendedor">
+        <extends controller="CRUD"/>
+
+        <action name="filtrarPorVendedor"
+                class="org.example.DataLogic.controllers.FiltrarPorVendedorController"
+                icon="filter"
+                keystroke="Control F">
+            <set property="empleadoId" value="empleado.id"/>
+        </action>
+    </controller>
+
+    <!-- ========== CONTROLADOR PARA VALIDAR METAS DE VENTA ========== -->
+    <controller name="ValidarMetaVenta">
+        <extends controller="CRUD"/>
+
+        <action name="save"
+                class="org.example.DataLogic.controllers.ValidarMetaVentaController"
+                keystroke="Control S"
+                icon="save"
+                takes-long="true"/>
+    </controller>
+
+    <!-- ========== CONTROLADOR PARA CONVERSIONES ========== -->
+    <controller name="Conversion">
+        <!-- Acción para convertir cotización a factura -->
+        <action name="convertirCotizacionAFactura"
+                class="org.example.DataLogic.actions.ConvertirCotizacionAFacturaAction"
+                icon="cart"
+                keystroke="Control F"
+                takes-long="true"/>
+
+        <!-- Acción para convertir orden a factura -->
+        <action name="convertirOrdenAFactura"
+                class="org.example.DataLogic.actions.ConvertirOrdenAFacturaAction"
+                icon="invoice"
+                keystroke="Control O"
+                takes-long="true"/>
+    </controller>
+
+</controllers>
