@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+
+<module name="OrdenCompra">
+    <model name="OrdenCompra"/>
+    <controller name="Typical"/>
+
+    <action name="ConvertirAFactura"
+            class="org.example.DataLogic.actions.ConvertirOrdenAFacturaAction"
+            image="invoice"
+            mode="detail"/>
+
+    <controller name="Typical">
+        <extends controllers="Default"/>
+        <actions>
+            <action action="ConvertirOrdenAFacturaAction"
+                    visible="true"
+                    in-toolbar="true"/>
+        </actions>
+    </controller>
+</module>
