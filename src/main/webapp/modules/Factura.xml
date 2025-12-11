@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<module name="Factura">
+    <model name="Factura"/>
+    <controller name="Factura"/>
+    <controller name="Navigation"/>
+    <controller name="NavegacionRapida"/>
+    <controller name="Impresion"/>
+
+    <view name="Completa"/>
+
+    <actions>
+        <action name="CRUD.new" icon="new"/>
+        <action name="CRUD.save" icon="save"/>
+        <action name="CRUD.delete" icon="delete"/>
+        <action name="Factura.convertirOrdenAFactura" icon="transfer"/>
+        <action name="Factura.filtrarPorVendedor" icon="filter"/>
+        <action name="Navigation.previous" icon="previous"/>
+        <action name="Navigation.next" icon="next"/>
+        <action name="Navigation.first" icon="first"/>
+        <action name="Navigation.last" icon="last"/>
+        <action name="Mode.list" icon="list"/>
+        <action name="Mode.detail" icon="detail"/>
+        <action name="NavegacionRapida.irAOrdenes" icon="order"/>
+        <action name="NavegacionRapida.irAMetas" icon="target"/>
+        <action name="Impresion.generarPDF" icon="pdf"/>
+    </actions>
+</module>

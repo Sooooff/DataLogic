@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<module name="MetaVenta">
+    <model name="MetaVenta"/>
+    <controller name="MetaVenta"/>
+    <controller name="Navigation"/>
+    <controller name="NavegacionRapida"/>
+    <controller name="Impresion"/>
+
+    <view name="ConReporte"/>
+
+    <actions>
+        <action name="CRUD.new" icon="new"/>
+        <action name="MetaVenta.save" icon="save"/>
+        <action name="CRUD.delete" icon="delete"/>
+        <action name="MetaVenta.actualizarVentas" icon="calculator"/>
+        <action name="MetaVenta.generarReporteCumplimiento" icon="report"/>
+        <action name="MetaVenta.calcularCumplimiento" icon="checked"/>
+        <action name="Navigation.previous" icon="previous"/>
+        <action name="Navigation.next" icon="next"/>
+        <action name="Navigation.first" icon="first"/>
+        <action name="Navigation.last" icon="last"/>
+        <action name="Mode.list" icon="list"/>
+        <action name="Mode.detail" icon="detail"/>
+        <action name="NavegacionRapida.irAFacturas" icon="invoice"/>
+        <action name="NavegacionRapida.irAEmpleados" icon="user"/>
+        <action name="Impresion.generarPDF" icon="pdf"/>
+    </actions>
+</module>

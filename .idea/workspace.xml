@@ -5,33 +5,571 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3db848c5-5a49-4fba-9e5a-ff4f68ceaf87" name="Changes" comment="Cambios">
-      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/VerReporteCumplimientoAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorActualizadorAñoMes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/ActualizarVentasController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/CalcularCumplimientoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/FiltrarPorVendedorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/ReporteCumplimientoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/ValidarMetaVentaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataLogic/calculators/CalculatorActualizarAnioMes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataLogic/controllers/ValidarMetaVentaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataLogic/model/ItemLinea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/ConvertirCotizacionAFacturaAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/ConvertirOrdenAFacturaAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/ConvertirOrdenAFacturaAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorNumeroOrden.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorNumeroOrden.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorPrecioUnitario.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorPrecioUnitario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Cotizacion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/LineItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/LineItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/MetaVenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/MetaVenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/OrdenCompra.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/OrdenCompra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Rol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/actions/ConvertirCotizacionAFacturaAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/actions/ConvertirCotizacionAFacturaAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/CotizacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/CotizacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/FacturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/FacturaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/repository/CotizacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/repository/CotizacionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/CotizacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/CotizacionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/DataLogic/DataLogic/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/DataLogic/DataLogic/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/DataLogic/DataLogic/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/data/DataLogic-db.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/data/DataLogic-db.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/data/DataLogic-db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/data/DataLogic-db.script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/ConvertirOrdenAFacturaAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/VerReporteCumplimientoAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorActualizadorAñoMes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorNumeroFactura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorNumeroOrden.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorPrecioUnitario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/ActualizarVentasController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/CalcularCumplimientoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/FiltrarPorVendedorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/ReporteCumplimientoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/ValidarMetaVentaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Factura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/LineItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/MetaVenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/OrdenCompra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Rol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/run/.something" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/run/DataLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/i18n/DataLogic-labels_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/i18n/DataLogic-messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/naviox-users.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/naviox.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/Cotizacion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/Factura.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/OrdenCompra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/controllers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/annotation-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/aplicacion.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/application.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/controladores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/controllers.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/conversores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/converters.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/default-size.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/editores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/editors.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/longitud-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/stereotype-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/tabs-default-values.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/tipo-anotacion-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/tipo-estereotipo-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/validadores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/validators.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/dtds/valores-defecto-tabs.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/resources/xava/editors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/webapp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/webapp/naviox/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/webapp/xava/editors/js/yourEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/webapp/xava/editors/yourEditor.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/webapp/xava/style/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/test/resources/xava-junit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/firstSteps_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/firstSteps_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/leftMenu_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/leftMenu_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/moduleHeader_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/moduleHeader_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/modulesList_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/modulesList_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/modulesMenu_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/modulesMenu_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/selectModules_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/selectModules_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/signIn_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/signIn_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/welcome_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/welcome_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/barButton_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/barButton_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/bottomButtons_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/bottomButtons_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/buttonBar_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/buttonBar_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/collectionFrameHeader_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/collectionFrameHeader_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/collection_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/collection_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/core_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/core_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/detail_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/detail_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editorWrapper_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editorWrapper_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/booleanEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/booleanEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/collectionTotals_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/collectionTotals_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/comparatorsBooleanCombo_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/comparatorsBooleanCombo_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/comparatorsCombo_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/comparatorsCombo_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/comparatorsDescriptionsList_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/comparatorsDescriptionsList_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/dateCalendarEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/dateCalendarEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/dateTimeCombinedCalendarEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/dateTimeCombinedCalendarEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/descriptionsEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/descriptionsEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/elementCollectionEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/elementCollectionEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/listEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/listEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/moneyEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/moneyEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/passwordEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/passwordEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/textAreaEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/textAreaEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/textEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/textEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/errors_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/errors_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/execute_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/execute_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/frameActions_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/frameActions_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/listConfigurations_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/listConfigurations_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/list_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/list_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/messages_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/messages_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/module_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/module_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/reference_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/reference_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/themeChooser_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/themeChooser_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/data/DataLogic-db.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/data/DataLogic-db.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/data/DataLogic-db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/data/DataLogic-db.script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/actions/ConvertirCotizacionAFacturaAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/actions/ConvertirOrdenAFacturaAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/calculators/CalculatorNumeroFactura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/calculators/CalculatorNumeroOrden.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/calculators/CalculatorPrecioUnitario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/model/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/model/Cotizacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/model/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/model/Factura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/model/LineItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/model/MetaVenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/model/OrdenCompra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/model/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/model/Rol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/run/DataLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/i18n/DataLogic-labels_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/i18n/DataLogic-messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/naviox-users.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/naviox.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/Cotizacion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/Factura.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/OrdenCompra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/controllers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/annotation-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/aplicacion.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/application.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/controladores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/controllers.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/conversores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/converters.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/default-size.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/editores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/editors.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/longitud-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/stereotype-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/tabs-default-values.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/tipo-anotacion-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/tipo-estereotipo-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/validadores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/validators.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/dtds/valores-defecto-tabs.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/resources/xava/editors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/webapp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/webapp/naviox/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/webapp/xava/editors/js/yourEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/webapp/xava/editors/yourEditor.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/webapp/xava/style/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/test/resources/xava-junit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/i18n/DataLogic-labels_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/i18n/DataLogic-messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/naviox-users.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/naviox.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/Cotizacion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/Factura.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/OrdenCompra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/controllers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/annotation-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/aplicacion.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/application.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/controladores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/controllers.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/conversores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/converters.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/default-size.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/editores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/editors.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/longitud-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/stereotype-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/tabs-default-values.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/tipo-anotacion-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/tipo-estereotipo-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/validadores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/validators.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/dtds/valores-defecto-tabs.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/classes/xava/editors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/data/DataLogic-db.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/data/DataLogic-db.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/data/DataLogic-db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/data/DataLogic-db.script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/calculators/CalculatorNumeroOrden.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/calculators/CalculatorPrecioPorUnidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/CotizacionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/EmpleadoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/FacturaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/OrdenController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/model/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/model/Cotizacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/model/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/model/Factura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/model/LineItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/model/MetaVenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/model/OrdenCompra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/model/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/model/Rol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/repository/CotizacionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/repository/EmpleadoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/repository/FacturaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/repository/OrdenRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/run/.something" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/run/DataLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/CotizacionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/EmpleadoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/FacturaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/MetaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/OrdenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/ReportService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/i18n/DataLogic-labels_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/i18n/DataLogic-messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/naviox-users.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/naviox.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/controllers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/annotation-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/aplicacion.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/application.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/controladores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/controllers.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/conversores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/converters.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/default-size.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/editores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/editors.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/longitud-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/stereotype-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/tabs-default-values.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/tipo-anotacion-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/tipo-estereotipo-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/validadores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/validators.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/dtds/valores-defecto-tabs.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/resources/xava/editors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/webapp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/webapp/naviox/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/webapp/xava/editors/js/yourEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/webapp/xava/editors/yourEditor.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/webapp/xava/style/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/test/resources/xava-junit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/firstSteps_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/firstSteps_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/moduleHeader_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/moduleHeader_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/signIn_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/signIn_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/signOut_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/signOut_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/welcome_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/naviox/welcome_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/bottomButtons_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/bottomButtons_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/buttonBar_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/buttonBar_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/core_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/core_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/detail_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/detail_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/passwordEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/passwordEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/textEditor_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/editors/textEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/errors_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/errors_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/execute_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/execute_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/messages_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/messages_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/module_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/module_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/themeChooser_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/temp/work/Tomcat/localhost/DataLogic/org/apache/jsp/xava/themeChooser_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/i18n/DataLogic-labels.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/i18n/DataLogic-labels_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/i18n/DataLogic-messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/i18n/DataLogic-messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/naviox-users.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/naviox.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/actions/ConvertirCotizacionAFacturaAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/actions/ConvertirOrdenAFacturaAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/calculators/CalculatorNumeroFactura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/calculators/CalculatorNumeroOrden.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/calculators/CalculatorPrecioUnitario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/model/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/model/Cotizacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/model/Empleado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/model/Factura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/model/LineItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/model/MetaVenta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/model/OrdenCompra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/model/Producto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/model/Rol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/org/example/DataLogic/run/DataLogic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/Cotizacion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/Factura.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/OrdenCompra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/controllers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/annotation-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/aplicacion.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/application.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/controladores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/controllers.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/conversores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/converters.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/default-size.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/editores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/editors.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/longitud-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/stereotype-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/tabs-default-values.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/tipo-anotacion-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/tipo-estereotipo-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/validadores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/validators.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/dtds/valores-defecto-tabs.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/classes/xava/editors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/SparseBitSet-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/aopalliance-repackaged-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/byte-buddy-1.12.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/checker-qual-3.49.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-beanutils-1.11.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-codec-1.18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-collections4-4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-compress-1.27.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-digester-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-fileupload-1.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-io-2.18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-lang3-3.18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-logging-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-math3-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/commons-validator-1.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/curvesapi-1.08.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/dom4j-2.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/dwr-3.0.2-RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/ecj-3.21.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/ejb-api-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/fontbox-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/groovy-4.0.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/hibernate-commons-annotations-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/hibernate-core-5.6.15.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/hibernate-envers-5.6.15.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/hibernate-validator-6.2.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/hk2-api-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/hk2-locator-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/hk2-utils-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/hsqldb-2.7.4-jdk8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/htmlunit-4.16.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/htmlunit-core-js-4.16.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/htmlunit-csp-4.16.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/htmlunit-cssparser-4.16.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/htmlunit-websocket-client-4.16.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/htmlunit-xpath-4.16.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/httpclient-4.5.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/httpcore-4.4.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/httpmime-4.5.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jackson-annotations-2.17.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jackson-core-2.17.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jackson-databind-2.17.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jackson-dataformat-xml-2.17.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.activation-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.inject-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.json-1.1.6-module.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.json-1.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.json-api-1.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.json.bind-api-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.mail-1.6.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jakarta.ws.rs-api-2.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jandex-2.4.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jasperreports-6.21.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jasperreports-fonts-6.21.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/javassist-3.30.2-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jboss-logging-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jcommon-1.0.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jersey-client-2.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jersey-common-2.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jersey-hk2-2.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jersey-media-json-binding-2.47.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jfreechart-1.0.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/json-20250517.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jsoup-1.21.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/junit-4.13.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/log4j-api-2.25.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/log4j-core-2.25.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/lombok-1.18.40.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/neko-htmlunit-4.16.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/openpdf-1.3.32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/openxava-7.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/osgi-resource-locator-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/pdfbox-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/pdfbox-io-3.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/poi-5.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/poi-ooxml-5.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/poi-ooxml-lite-5.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/postgresql-42.7.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/stax2-api-4.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/tomcat-annotations-api-9.0.110.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/tomcat-dbcp-9.0.110.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/tomcat-embed-core-9.0.110.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/tomcat-embed-el-9.0.110.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/WEB-INF/lib/tomcat-embed-jasper-9.0.110.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DataLogic/naviox/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/i18n/DataLogic-labels_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/i18n/DataLogic-messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/naviox-users.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/naviox.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/actions/ConvertirCotizacionAFacturaAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/actions/ConvertirOrdenAFacturaAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/actions/VerReporteCumplimientoAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/calculators/CalculatorActualizarAnioMes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/calculators/CalculatorNumeroFactura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/calculators/CalculatorNumeroOrden.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/calculators/CalculatorPrecioUnitario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/calculators/OnChangeProductoCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/controllers/CalcularCumplimientoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/controllers/FiltrarPorVendedorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/controllers/ValidarMetaVentaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/controls/EmpleadoVendedorControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/controls/IPropertyControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/controls/MonedaControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/model/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/model/Cotizacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/model/Empleado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/model/Factura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/model/LineItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/model/MetaVenta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/model/OrdenCompra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/model/Producto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/model/Rol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/DataLogic/run/DataLogic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/Cotizacion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/Factura.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/OrdenCompra.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/controllers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/annotation-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/aplicacion.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/application.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/controladores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/controllers.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/conversores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/converters.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/default-size.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/editores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/editors.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/longitud-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/stereotype-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/tabs-default-values.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/tipo-anotacion-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/tipo-estereotipo-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/validadores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/validators.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/dtds/valores-defecto-tabs.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xava/editors.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,37 +614,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DataLogic.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DataLogic [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DataLogic [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DataLogic [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DataLogic [mvn,dependency:tree,|,grep...].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.DataLogic [package].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nathaly/Desktop/Proyecto de POO&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DataLogic.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.DataLogic [clean].executor": "Run",
+    "Maven.DataLogic [compile].executor": "Run",
+    "Maven.DataLogic [install].executor": "Run",
+    "Maven.DataLogic [mvn,dependency:tree,|,grep...].executor": "Run",
+    "Maven.DataLogic [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/prueb/Downloads/DLn/DLt/DataLogic",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.openxava.jpa" />
@@ -116,14 +654,6 @@
     <option name="myCommands">
       <command value="mvn mvn dependency:tree | grep openxava" />
     </option>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -142,6 +672,7 @@
       <workItem from="1765121622137" duration="3315000" />
       <workItem from="1765210090558" duration="1044000" />
       <workItem from="1765460253847" duration="2331000" />
+      <workItem from="1765488899917" duration="6060000" />
     </task>
     <task id="LOCAL-00001" summary="Cambios">
       <option name="closed" value="true" />

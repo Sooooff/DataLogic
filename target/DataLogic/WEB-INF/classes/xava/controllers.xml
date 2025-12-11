@@ -1,36 +1,192 @@
-﻿<?xml version = "1.0" encoding = "ISO-8859-1"?>
-
-<!DOCTYPE controllers SYSTEM "dtds/controllers.dtd">
-
-<!-- 
-Controllers doc: 
-https://www.openxava.org/OpenXavaDoc/docs/controllers_en.html
-
-Default controllers included in OpenXava (you can extend from them):
-https://github.com/openxava/openxava/blob/master/openxava/src/main/resources/xava/default-controllers.xml
- 
-Examples of controllers (from test application):
-https://github.com/openxava/openxava/blob/master/openxavatest/src/main/resources/xava/controllers.xml
--->
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <controllers>
-    
-    <!-- Environment variable:
-    <env-var name="DataLogic_DEFAULT_YEAR" value="2015"/> 
-    -->
-    
-    <!-- Session object:
-    <object name="DataLogic_activeYear" class="java.lang.Integer" value="2015" 
-    	    scope="global"/>    
-    -->
-    
-    <!-- Controller:
-    <controller name="Teacher">
-    	<extends controller="Typical"/>
-    	<action name="new" icon="plus-box-multiple" keystroke="Control N"
-        	class="actions.CreateTeacher">
-    	</action>
-	</controller>    
-    -->
-    
+
+    <!-- ========== CONTROLADOR PARA FACTURA ========== -->
+    <controller name="Factura">
+        <extends controller="CRUD"/>
+        <extends controller="Navigation"/>
+
+        <!-- Convertir orden a factura -->
+        <action name="convertirOrdenAFactura"
+                class="org.example.DataLogic.actions.ConvertirOrdenAFacturaAction"
+                icon="transfer"
+                keystroke="Control F"
+                tooltip="Convertir orden seleccionada a factura">
+            <set property="inDialog" value="false"/>
+        </action>
+
+        <!-- Filtrar por vendedor -->
+        <action name="filtrarPorVendedor"
+                class="org.example.DataLogic.controllers.FiltrarPorVendedorController"
+                mode="detail"
+                icon="filter"
+                tooltip="Filtrar facturas por vendedor">
+            <use-object name="xava_view"/>
+            <set property="empleadoId" from="xava_view.getValue('empleado.id')"/>
+        </action>
+    </controller>
+
+    <!-- ========== CONTROLADOR PARA META VENTA ========== -->
+    <controller name="MetaVenta">
+        <extends controller="CRUD"/>
+        <extends controller="Navigation"/>
+
+        <!-- Guardar con validación personalizada -->
+        <action name="save"
+                class="org.example.DataLogic.controllers.ValidarMetaVentaController"
+                icon="save"
+                keystroke="Control S"
+                tooltip="Guardar meta con validación">
+            <use-object name="xava_view"/>
+        </action>
+
+        <!-- Actualizar ventas de todas las metas -->
+        <action name="actualizarVentas"
+                class="org.example.DataLogic.controllers.ActualizarVentasController"
+                icon="calculator"
+                keystroke="Control U"
+                tooltip="Actualizar ventas realizadas para todas las metas">
+            <use-object name="xava_tab"/>
+        </action>
+
+        <!-- Generar reporte detallado -->
+        <action name="generarReporteCumplimiento"
+                class="org.example.DataLogic.controllers.ReporteCumplimientoController"
+                icon="report"
+                keystroke="Control R"
+                tooltip="Generar reporte de cumplimiento del vendedor seleccionado">
+            <use-object name="xava_view"/>
+        </action>
+
+        <!-- Calcular cumplimiento para metas seleccionadas -->
+        <action name="calcularCumplimiento"
+                class="org.example.DataLogic.controllers.CalcularCumplimientoController"
+                icon="checked"
+                keystroke="Control C"
+                tooltip="Calcular si se cumplieron las metas seleccionadas">
+            <use-object name="xava_tab"/>
+        </action>
+    </controller>
+
+    <!-- ========== CONTROLADOR PARA ORDEN COMPRA ========== -->
+    <controller name="OrdenCompra">
+        <extends controller="CRUD"/>
+        <extends controller="Navigation"/>
+
+        <!-- Convertir orden a factura -->
+        <action name="convertirAFactura"
+                class="org.example.DataLogic.actions.ConvertirOrdenAFacturaAction"
+                icon="transfer"
+                keystroke="Control F"
+                tooltip="Convertir esta orden a factura">
+            <set property="inDialog" value="false"/>
+        </action>
+    </controller>
+
+    <!-- ========== CONTROLADOR PARA PRODUCTO ========== -->
+    <controller name="Producto">
+        <extends controller="CRUD"/>
+        <extends controller="Navigation"/>
+    </controller>
+
+    <!-- ========== CONTROLADOR PARA EMPLEADO ========== -->
+    <controller name="Empleado">
+        <extends controller="CRUD"/>
+        <extends controller="Navigation"/>
+
+        <!-- Ver reporte de cumplimiento -->
+        <action name="verReporteCumplimiento"
+                class="org.example.DataLogic.actions.VerReporteCumplimientoAction"
+                icon="report"
+                keystroke="Control R"
+                tooltip="Ver reporte de cumplimiento para este empleado">
+            <use-object name="xava_view"/>
+        </action>
+    </controller>
+
+    <!-- ========== CONTROLADOR PARA CLIENTE ========== -->
+    <controller name="Cliente">
+        <extends controller="CRUD"/>
+        <extends controller="Navigation"/>
+    </controller>
+
+    <!-- ========== CONTROLADOR GLOBAL DE NAVEGACIÓN ========== -->
+    <controller name="NavegacionRapida">
+        <!-- Ir a Facturas -->
+        <action name="irAFacturas"
+                class="org.openxava.actions.GoModuleAction"
+                icon="invoice"
+                keystroke="Shift Control F"
+                tooltip="Ir al módulo de Facturas">
+            <set property="module" value="Factura"/>
+        </action>
+
+        <!-- Ir a Metas -->
+        <action name="irAMetas"
+                class="org.openxava.actions.GoModuleAction"
+                icon="target"
+                keystroke="Shift Control M"
+                tooltip="Ir al módulo de Metas de Venta">
+            <set property="module" value="MetaVenta"/>
+        </action>
+
+        <!-- Ir a Órdenes -->
+        <action name="irAOrdenes"
+                class="org.openxava.actions.GoModuleAction"
+                icon="order"
+                keystroke="Shift Control O"
+                tooltip="Ir al módulo de Órdenes de Compra">
+            <set property="module" value="OrdenCompra"/>
+        </action>
+
+        <!-- Ir a Productos -->
+        <action name="irAProductos"
+                class="org.openxava.actions.GoModuleAction"
+                icon="product"
+                keystroke="Shift Control P"
+                tooltip="Ir al módulo de Productos">
+            <set property="module" value="Producto"/>
+        </action>
+
+        <!-- Ir a Empleados -->
+        <action name="irAEmpleados"
+                class="org.openxava.actions.GoModuleAction"
+                icon="user"
+                keystroke="Shift Control E"
+                tooltip="Ir al módulo de Empleados">
+            <set property="module" value="Empleado"/>
+        </action>
+
+        <!-- Ir a Clientes -->
+        <action name="irAClientes"
+                class="org.openxava.actions.GoModuleAction"
+                icon="customer"
+                keystroke="Shift Control C"
+                tooltip="Ir al módulo de Clientes">
+            <set property="module" value="Cliente"/>
+        </action>
+    </controller>
+
+    <!-- ========== CONTROLADOR PARA IMPRESIÓN ========== -->
+    <controller name="Impresion">
+        <!-- Generar PDF -->
+        <action name="generarPDF"
+                class="org.openxava.actions.PrintAction"
+                icon="pdf"
+                keystroke="Control P"
+                tooltip="Generar PDF">
+            <set property="format" value="pdf"/>
+        </action>
+
+        <!-- Generar Excel -->
+        <action name="generarExcel"
+                class="org.openxava.actions.PrintAction"
+                icon="excel"
+                keystroke="Control E"
+                tooltip="Generar Excel">
+            <set property="format" value="xlsx"/>
+        </action>
+    </controller>
+
 </controllers>
