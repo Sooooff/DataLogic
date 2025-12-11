@@ -1,6 +1,5 @@
 package org.example.DataLogic.controller;
 
-import org.example.DataLogic.model.Cotizacion;
 import org.example.DataLogic.model.Factura;
 import org.example.DataLogic.model.OrdenCompra;
 import org.example.DataLogic.service.FacturaService;

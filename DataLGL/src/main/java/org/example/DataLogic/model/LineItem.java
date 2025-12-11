@@ -12,26 +12,25 @@ import java.math.BigDecimal;
 
 @Embeddable
 @Getter @Setter
-public class LineItem {
+public class ItemLinea {
 
     private int cantidad;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @DescriptionsList
+    @DescriptionsList(descriptionProperties = "nombre, precioPorUnidad")
+    @Required
     private Producto producto;
 
-    @DefaultValueCalculator(
-            value= CalculatorPrecioUnitario.class,
-            properties = @PropertyValue(
-                    name="idProducto",
-                    from = "producto.id"
-            )
-    )
     @Money
+    @DefaultValueCalculator(
+            value = CalculatorPrecioUnitario.class,
+            properties = @PropertyValue(name = "productoId", from = "producto.id")
+    )
     private BigDecimal precioUnitario;
 
     @Money
-    @Depends("precioUnitario,cantidad")
+    @ReadOnly
+    @Depends("precioUnitario, cantidad")
     public BigDecimal getSubtotal() {
         if (precioUnitario == null || cantidad <= 0) {
             return BigDecimal.ZERO;

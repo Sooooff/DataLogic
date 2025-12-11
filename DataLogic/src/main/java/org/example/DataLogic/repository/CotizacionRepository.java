@@ -1,7 +1,5 @@
 package org.example.DataLogic.repository;
 
-import org.example.DataLogic.model.Cotizacion;
-
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 

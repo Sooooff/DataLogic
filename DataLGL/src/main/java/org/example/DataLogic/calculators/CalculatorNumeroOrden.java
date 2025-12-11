@@ -16,12 +16,9 @@ public class CalculatorNumeroOrden implements ICalculator {
     public Object calculate() throws Exception {
         Integer numero = 1;
         Query query = XPersistence.getManager()
-                .createQuery("SELECT max(f.numeroOrden)" +
-                        " FROM OrdenCompra f " +
-                        " WHERE f.anioFiscal = :anioFiscal");
-        query.setParameter("anioFiscal", anioFiscal);
+                .createQuery("SELECT max(o.numeroOrden) FROM OrdenCompra o");
 
-        Integer maxNumero = (Integer)query.getSingleResult();
+        Integer maxNumero = (Integer) query.getSingleResult();
         return (maxNumero == null) ? 1 : maxNumero + 1;
     }
 }

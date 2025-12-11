@@ -5,12 +5,8 @@ import lombok.Setter;
 import org.example.DataLogic.calculators.CalculatorNumeroFactura;
 import org.openxava.annotations.*;
 import org.openxava.calculators.CurrentLocalDateCalculator;
-import org.openxava.calculators.CurrentYearCalculator;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -18,23 +14,28 @@ import java.util.Collection;
 
 @Entity
 @Getter @Setter
-@View(name="Report", members = "numeroFactura, fecha, empleado;" +
-        "total;" +
-        "ordenOrigen, cotizacionOrigen")
-// NUEVA VISTA PARA SELECCIONAR SOLO EL EMPLEADO EN LA ACCIÓN
-@View(name="SeleccionEmpleado", members = "empleado")
+@Table(name = "factura")
+@Views({
+        @View(name = "Simple", members = "numeroFactura, fecha, empleado, cliente, total"),
+        @View(name = "SeleccionEmpleado", members = "empleado; cliente"),
+        @View(name = "Completa", members = "numeroFactura, fecha; empleado; cliente; items; total; ordenOrigen")
+})
+@Tabs({
+        @Tab(name = "Todas",
+                properties = "numeroFactura, fecha, empleado.nombreCompleto, cliente.nombreCompleto, total",
+                defaultOrder = "${fecha} desc"),
+        @Tab(name = "PorVendedor",
+                properties = "numeroFactura, fecha, empleado.nombreCompleto, cliente.nombreCompleto, total",
+                baseCondition = "${empleado.id} = ?"),
+        @Tab(name = "ParaMetas",
+                properties = "numeroFactura, fecha, empleado.nombreCompleto, total",
+                defaultOrder = "${fecha} desc")
+})
 public class Factura extends BaseEntity {
 
-    @DefaultValueCalculator(CurrentYearCalculator.class)
-    @ReadOnly
-    private int anioFiscal;
-
     @DefaultValueCalculator(
-            value= CalculatorNumeroFactura.class,
-            properties = {
-                    @PropertyValue(name="anioFiscal"),
-                    @PropertyValue(name="entidad", value="Factura")
-            }
+            value = CalculatorNumeroFactura.class,
+            properties = @PropertyValue(name = "entidad", value = "Factura")
     )
     @ReadOnly
     private int numeroFactura;
@@ -43,39 +44,34 @@ public class Factura extends BaseEntity {
     @ReadOnly
     private LocalDate fecha;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @DescriptionsList(descriptionProperties = "nombre")
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @DescriptionsList(descriptionProperties = "nombreCompleto")
     @Required
     private Empleado empleado;
 
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @DescriptionsList(descriptionProperties = "nombreCompleto")
+    @Required
+    private Cliente cliente;
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @ReferenceView("Report")
+    @ReferenceView("Simple")
+    @ReadOnly
     private OrdenCompra ordenOrigen;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Cotizacion cotizacionOrigen;
-    private Long ordenOrigenId;
-    private Long empleadoId;
-
-
     @ElementCollection
-    @ListProperties(
-            "producto.nombre" +
-                    ",precioUnitario" +
-                    ",cantidad" +
-                    ",subtotal"
-    )
-    private Collection<LineItem> items = new ArrayList<>();
+    @ListProperties("producto.nombre, precioUnitario, cantidad, subtotal")
+    private Collection<ItemLinea> items = new ArrayList<>();
 
     @Money
+    @ReadOnly
     @Depends("items.subtotal")
     public BigDecimal getTotal() {
-        if (items == null) return BigDecimal.ZERO;
+        if (items == null || items.isEmpty()) {
+            return BigDecimal.ZERO;
+        }
         return items.stream()
-                .map(LineItem::getSubtotal)
+                .map(ItemLinea::getSubtotal)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
-    }
-
-    public void setCotizacionOrigenId(Long id) {
     }
 }

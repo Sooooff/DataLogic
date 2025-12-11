@@ -1,6 +1,5 @@
 package org.example.DataLogic.controller;
 
-import org.example.DataLogic.model.Cotizacion;
 import org.example.DataLogic.model.LineItem;
 import org.example.DataLogic.service.CotizacionService;
 

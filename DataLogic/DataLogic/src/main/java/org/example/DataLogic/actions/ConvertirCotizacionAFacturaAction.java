@@ -1,6 +1,5 @@
 package org.example.DataLogic.actions;
 
-import org.example.DataLogic.model.Cotizacion;
 import org.example.DataLogic.model.Factura;
 import org.example.DataLogic.model.LineItem;
 import org.openxava.actions.ViewBaseAction;

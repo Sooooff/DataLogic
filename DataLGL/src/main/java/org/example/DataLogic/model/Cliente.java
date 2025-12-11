@@ -4,16 +4,14 @@ import lombok.Getter;
 import lombok.Setter;
 import org.openxava.annotations.*;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Getter @Setter
-@Table(name = "empleado")
-@Views({
-        @View(name = "Simple", members = "nombre, apellido, rol, activo"),
-        @View(name = "Completo", members = "nombre, apellido, rol, correo, telefono, activo")
-})
-public class Empleado extends BaseEntity {
+@Table(name = "cliente")
+public class Cliente extends BaseEntity {
 
     @Column(length = 50, nullable = false)
     @Required
@@ -25,18 +23,15 @@ public class Empleado extends BaseEntity {
     @DisplaySize(20)
     private String apellido;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @DescriptionsList(descriptionProperties = "nombre")
-    @Required
-    private Rol rol;
-
     @Column(length = 100, unique = true)
     private String correo;
 
     @Column(length = 20)
     private String telefono;
 
-    private Boolean activo = true;
+    @Column(length = 200)
+    @TextArea
+    private String direccion;
 
     @ReadOnly
     @DisplaySize(40)

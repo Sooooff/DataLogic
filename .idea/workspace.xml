@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db848c5-5a49-4fba-9e5a-ff4f68ceaf87" name="Changes" comment="Cambios" />
+    <list default="true" id="3db848c5-5a49-4fba-9e5a-ff4f68ceaf87" name="Changes" comment="Cambios">
+      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/VerReporteCumplimientoAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorActualizadorAñoMes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/ActualizarVentasController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/CalcularCumplimientoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/FiltrarPorVendedorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/ReporteCumplimientoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/controllers/ValidarMetaVentaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/ConvertirCotizacionAFacturaAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/ConvertirOrdenAFacturaAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/actions/ConvertirOrdenAFacturaAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorNumeroOrden.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorNumeroOrden.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorPrecioUnitario.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/calculators/CalculatorPrecioUnitario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Cotizacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/LineItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/LineItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/MetaVenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/MetaVenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/OrdenCompra.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/OrdenCompra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLGL/src/main/java/org/example/DataLogic/model/Rol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/actions/ConvertirCotizacionAFacturaAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/DataLogic/src/main/java/org/example/DataLogic/actions/ConvertirCotizacionAFacturaAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/CotizacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/CotizacionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/FacturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/controller/FacturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/repository/CotizacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/repository/CotizacionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/CotizacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataLogic/src/main/java/org/example/DataLogic/service/CotizacionService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,8 +61,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Kxfuentes/DataLogicc.git&quot;,
-    &quot;accountId&quot;: &quot;282166f1-5be4-4061-a57e-500ed2ed02a8&quot;
+    &quot;url&quot;: &quot;https://github.com/Sooooff/DataLogic.git&quot;,
+    &quot;accountId&quot;: &quot;4abb3bfc-dea5-4a69-ae72-15c972588013&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -48,36 +76,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DataLogic.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.DataLogic [clean].executor": "Run",
-    "Maven.DataLogic [compile].executor": "Run",
-    "Maven.DataLogic [install].executor": "Run",
-    "Maven.DataLogic [mvn,dependency:tree,|,grep...].executor": "Run",
-    "Maven.DataLogic [package].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/prueb/Downloads/DataLogic/DataLogic (3)/DataLogic",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DataLogic.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DataLogic [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DataLogic [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DataLogic [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DataLogic [mvn,dependency:tree,|,grep...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DataLogic [package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nathaly/Desktop/Proyecto de POO&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.openxava.jpa" />
@@ -91,8 +120,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
       </set>
     </attachedChunks>
   </component>
@@ -111,6 +140,8 @@
       <workItem from="1764842400363" duration="23999000" />
       <workItem from="1764889381607" duration="12000" />
       <workItem from="1765121622137" duration="3315000" />
+      <workItem from="1765210090558" duration="1044000" />
+      <workItem from="1765460253847" duration="2331000" />
     </task>
     <task id="LOCAL-00001" summary="Cambios">
       <option name="closed" value="true" />
@@ -127,11 +158,6 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="e612d435-c56b-427e-831c-da70c3a8ffac" value="EDITOR" />
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -150,11 +176,6 @@
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-        <entry key="e612d435-c56b-427e-831c-da70c3a8ffac">
           <value>
             <State />
           </value>
